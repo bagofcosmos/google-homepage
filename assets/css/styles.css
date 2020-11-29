@@ -1,0 +1,134 @@
+body {
+  color: #222;
+  line-height: 1.4;
+  background-color: none;
+  border-color: none;
+  padding: 0;
+  margin: 0; 
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+header {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0 0;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+.search {
+  display: flex;
+  align-content: center;
+  width: 70%;
+  margin: 0 auto;
+  -moz-border-radius: 15px;
+  border-radius: 35px;
+  border:solid 1px #e0e0e0;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  max-width: 34.3rem
+}
+
+.search img {
+  padding: none;
+}
+
+img.mag {
+  padding: 9px 10px 0 0;
+  width: 14.25px;
+  height: 14.95px;
+}
+
+img.mic {
+  padding: 6px 0 0;
+  width: 20px;
+  height: 20px;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  height: 32px;
+}
+
+
+.lowernav {
+  display: flex;
+  /** this makes it put space between the child divs **/
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  bottom: 0;
+  position: fixed;
+  background-color: #eeeeee;
+}
+
+
+.lowernav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 1rem; 
+}
+
+.lowernav li {
+  color: rgb(107, 107, 107);
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.lowernav li {
+  padding-right: 15px;
+}
+
+.uppernav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.uppernav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin: 0 1rem; 
+}
+
+.uppernav li {
+  padding: 15px 30px 0 0 ;
+}
+
+#google-search {
+  width: 9rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+   .search {
+   	min-width: 5rem;
+   }
+   
+   .search input {
+    border: none;
+   }
+}
